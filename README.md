@@ -8,7 +8,7 @@ As a demonstration of my skills, I built an app that utilizes components to fetc
 
 <br/>
 <div style="text-align: center;">
-    <img src="https://drive.google.com/file/d/1RptHAjm3bDMzVP9SbJiGQfZhl_aZDrIm/view?usp=sharing" alt="ipl-dashboard-output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+    <img src="https://res.cloudinary.com/strawhat/image/upload/v1632542107/currency%20codes/currency_nsj4mc.gif" alt="currency-converter-output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
 </div>
 <br/>
 
