@@ -1,0 +1,38 @@
+.select {
+  background-color: #d5bfbf;
+  color: white;
+  padding: 12px;
+  width: 30%;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.input {
+  background-color: #e6e6e6;
+  color: #5c7aea;
+  padding: 8px;
+  width: 70%;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}

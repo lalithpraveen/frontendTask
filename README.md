@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Currency conversion React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project I created a web app that uses reactjs to **convert currencies**
 
-## Available Scripts
+As a demonstration of my skills, I built an app that utilizes components to fetch data from an internal server, displays that data,introduces **routing** concepts, \***\*authenticates** and **authorizes** users, and adds responsiveness to the website.
 
-In the project directory, you can run:
+### Refer to image below:
 
-### `npm start`
+<br/>
+<div style="text-align: center;">
+    <img src="https://drive.google.com/file/d/1RptHAjm3bDMzVP9SbJiGQfZhl_aZDrIm/view?usp=sharing" alt="ipl-dashboard-output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+</div>
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Project Details
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<details>
+<summary>Click to view the Functionality that are added</summary>
 
-### `npm test`
+#### Project Functionality
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The app have the following functionalities
 
-### `npm run build`
+- Signup Route
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - To create an account, users will need to provide their email address and password.
+  - There will be an error message if the password and confirmation password don't match.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Login Route
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - Signing up is easy with a valid username and password. Users will be able to
+    access their accounts once they've registered.
+  - Navigation links are provided in the Navbar for users to access Home, Login, and Signup.
+  - Users will be able to view the website responsively in mobile view, tablet view as well
 
-### `npm run eject`
+- Home Route
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  - The user will have the option of converting their chosen currencies.Initially, USD and INR are set as the currencies.
+  - After clicking the logout link, users will be able to navigate to the login page
+  - By clicking the currency codes button you are directed to an reactpopup component, where you can click on the currency codes or close the popup to close.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Forget Password Route
+  - In case a user forgets his password, he can update it by using the forget password feature
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Project Details
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- In order to focus my efforts on the functionality of this app rather than styling it, I used Bootstrap for quick styling for most of the components.
+- I built a signup page to store user information in local storage, and then I built a login page to cross-check user input with the data in local storage, and if they do not exist, it will show the user an error.
+- Upon successfully entering user details and pressing login, the user will be redirected to the home page.
+- A flag is saved in local storage when a user enters the home page after clicking login so that I can communicate with the app. The flag is changed to false when the user clicks logout.Only authorized users will be able to access the home page. Everyone else will be redirected to the login page.
+- I explored open-source currency database APIs and chose fastforex API.Every time there is a change in the user inputs, the fastforex API will be called and the results will be returned.
 
-## Learn More
+### Improvements to come
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- The Google sign-in and sign-up functionality needs to be added.
+- There will be the ability to store emails and passwords for multiple users.
+- To the side of each currency code will be a flag of that country.
+- Detailed currency names and codes will be available.
+- A user interface and user experience needs to be improved to be attractive.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</details>
